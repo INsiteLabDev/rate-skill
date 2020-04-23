@@ -1,2 +1,3 @@
-Set rate to {rateLevel}
-Make rate {rateLevel}
+Set (rate|speed) to {rateLevel}
+Set (rate|speed) to level {rateLevel}
+Make (rate|speed) {rateLevel}
