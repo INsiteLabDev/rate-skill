@@ -1,7 +1,3 @@
-Normalize rate
-Make rate normal
-Default rate
-Set rate to normal
-Revert
-Revert to original
-Standard rate
+(Make|Set) (rate|speed) (to|too|) normal
+Revert (to|too|) original
+(Standard|Revert|Reset|Normal|Default) (rate|speed)

@@ -9,10 +9,19 @@ class Rate(MycroftSkill):
 
     @intent_file_handler('fastRate.intent')
     def handle_fastRate(self, message):
-        rateLevel = self.rate_map["5"]
+        rateLevel = self.rate_map["4"]
         if (self.compare_rate(rateLevel)):
             audio.update_rate(rateLevel)
             self.speak_dialog('fastRate')
+        else:
+            self.speak_dialog('atCurrentRate', {'rateLevel': 'fast'})
+    
+    @intent_file_handler('fastestRate.intent')
+    def handle_fastestRate(self, message):
+        rateLevel = self.rate_map["5"]
+        if (self.compare_rate(rateLevel)):
+            audio.update_rate(rateLevel)
+            self.speak_dialog('fastestRate')
         else:
             self.speak_dialog('atCurrentRate', {'rateLevel': 'fastest'})
     
